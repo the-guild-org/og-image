@@ -190,7 +190,16 @@ const imageLightOptions: DropdownOption[] = [
   },
 ];
 
-const imageDarkOptions = imageLightOptions;
+const imageDarkOptions = imageLightOptions.map((logo) => {
+  if (logo.text === "The Guild") {
+    return {
+      text: logo.text,
+      value: "https://the-guild.dev/static/white-logo.png",
+    };
+  }
+
+  return logo;
+});
 
 const widthOptions = [
   { text: "width", value: "auto" },
