@@ -1,4 +1,5 @@
 {
+  "name": "og-image-guild",
   "regions": ["all"],
   "functions": {
     "api/**": {
